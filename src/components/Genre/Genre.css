@@ -1,0 +1,28 @@
+* {
+  --primary-backgroundColor: hsl(240, 40%, 10%);
+}
+.genre {
+  background-color: hsl(0, 0%, 7%);
+  background-color: var(--primary-backgroundColor);
+  color: var(--primary-ForegroundColor);
+  border-radius: 1em;
+  max-width: 10rem;
+  font-size: small;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.genre.active {
+  background-color: orange;
+  color: var(--primary-backgroundColor);
+  font-size: 1rem;
+}
+.genre:active {
+  border: none !important;
+  transform: translateY(1px);
+}
+.genre:focus {
+  border: none !important;
+  outline: none !important;
+}

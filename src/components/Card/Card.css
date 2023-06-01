@@ -1,0 +1,41 @@
+:root {
+  --primary-ForegroundColor: hsl(240, 33%, 92%);
+  --primary-BackgoundColor: hsl(0, 68%, 50%);
+  --secondary-BackgroundColor: hsl(240, 40%, 10%);
+}
+
+.card {
+  color: var(--primary-ForegroundColor);
+  background-color: var(--secondary-BackgroundColor);
+  aspect-ratio: 1/2;
+  box-shadow: 0 0.25rem 1rem hsla(240, 40%, 10%, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  /* border: 1px solid white; */
+}
+.stacked {
+  display: grid;
+}
+.stacked > * {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.image {
+  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 1/1.5;
+  object-fit: cover;
+}
+
+.descriptionContainer {
+  line-height: 1.5;
+  align-self: end;
+  margin: 0 0 1.5rem;
+  padding: 0.5rem;
+}
+.title {
+  font-size: 1.5rem;
+  color: var(--primary-BackgoundColor);
+}

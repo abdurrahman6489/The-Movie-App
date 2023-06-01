@@ -1,0 +1,10 @@
+.navbarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 95vw;
+  /* border: 1px solid blue; */
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
