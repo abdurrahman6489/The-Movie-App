@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import { CiSearch } from "react-icons/ci";
 import Card from "./components/Card/Card";
 import Nav from "./components/Nav/Nav";
@@ -20,12 +21,13 @@ function App() {
   const [selectedMovie, setSelectedMovie] = useState({});
 
   //API endpoint Url & queries
-  const API_KEY = "api_key=7c5c9621868ea67c0f1ac5f1719ab556";
+  const API_KEY = import.meta.env.VITE_API_KEY;
   const BASE_URL = "https://api.themoviedb.org/3/";
   const query = `movie/${queryParameter}?`;
   const languageQuery = "&language=en-US";
   const pageQuery = "&page=1";
   const API_URL = BASE_URL + query + API_KEY + languageQuery + pageQuery;
+
   const genreQuery = BASE_URL + "genre/movie/list?" + API_KEY + languageQuery;
   const searchQuery = "search/movie?";
   const searchURL = BASE_URL + searchQuery + API_KEY + "&query=";
